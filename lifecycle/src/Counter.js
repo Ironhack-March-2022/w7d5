@@ -20,6 +20,13 @@ const Counter = () => {
 	}, [count])
 	*/
 
+	// this would be a useEffect call to fetch some data as soon as the component
+	// is mounted into the dom
+	useEffect(() => {
+		// fetch some data
+	}, [])
+
+
 	useEffect(() => {
 		console.log('component mounted');
 		const intervalId = setInterval(counter, 1000);
